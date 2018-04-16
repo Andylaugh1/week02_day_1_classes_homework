@@ -4,7 +4,7 @@ def initialize(input_name, input_cohort, input_words)
   @name = input_name
   @cohort = input_cohort
   @words = input_words
-  @fav_language = "Ruby"
+  # @fav_language = ""
 end
 
  def get_name
@@ -27,8 +27,8 @@ end
     return @words
   end
 
-  def fav_language
-    return "I love #{@fav_language}"
+  def fav_language(language)
+    return "I love #{language}"
   end
 
 

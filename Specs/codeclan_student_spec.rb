@@ -33,7 +33,8 @@ class TestCCStudent < MiniTest::Test
 
   def test_fav_language
     student = CCStudent.new("Rachel", 21, "I can talk!")
-    assert_equal("I love Ruby", student.fav_language)
+    student.fav_language("Ruby")
+    assert_equal("I love Ruby", student.fav_language("Ruby"))
   end
 
 
