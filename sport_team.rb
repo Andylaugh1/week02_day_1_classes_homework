@@ -7,6 +7,10 @@ class SportTeam
     @players = input_players
     @coach = input_coach
 
+    def add_player(player)
+      return @players << player
+    end
+
   #   def get_name()
   #     return @name
   #   end
@@ -24,5 +28,7 @@ class SportTeam
   #   end
   #
   end
+
+
 
 end
