@@ -11,6 +11,14 @@ class SportTeam
       return @players << player
     end
 
+    def check_player(name)
+      for player in @players
+        if player == name
+          return true
+        end
+      end
+    end
+
   #   def get_name()
   #     return @name
   #   end
